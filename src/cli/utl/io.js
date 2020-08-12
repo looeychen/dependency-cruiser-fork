@@ -20,7 +20,7 @@ function writeToFile(pOutputTo, pDependencyString) {
  * To prevent this problem from happening we should take the value at which
  * the OS guarantees atomic writes to pipes - which on my OSX machine is
  * 512 bytes. That seems pretty low (I've seen reports of 4k on the internet)
- * so it looks like a safe limit.
+ * so it looks like a safe limit to use for PIPE_BUFFER_SIZE
  *
  * @param  {string} pString The string to write
  * @param  {number} pBufferSize The size of the buffer to use.

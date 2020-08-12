@@ -26,28 +26,59 @@ function formatPerfLine(pTime, pPreviousTime, pMessage) {
   )} ${formatMemory(process.memoryUsage().heapUsed)} ${pMessage}\n`;
 }
 
-module.exports = function setUpTimeLogListener(pStream = process.stderr) {
-  let lPreviousMessage = "start of node process";
-  let lPreviousTime = 0;
+function writeHeader(pStream, pMaxLogLevel) {
+  return (_pMessage, pLevel = bus.levels.SUMMARY) => {
+    if (pLevel <= pMaxLogLevel) {
+      pStream.write(
+        chalk.bold("  elapsed heapTotal  heapUsed after step...\n")
+      );
+    }
+  };
+}
 
-  pStream.write(chalk.bold("  elapsed heapTotal  heapUsed after step...\n"));
+function writeProgressMessage(pState, pStream, pMaxLogLevel) {
+  return (pMessage, pLevel = bus.levels.SUMMARY) => {
+    if (pLevel <= pMaxLogLevel) {
+      const lTime = process.uptime();
 
-  bus.on("progress", (pMessage) => {
-    const lTime = process.uptime();
+      pStream.write(
+        formatPerfLine(lTime, pState.previousTime, pState.previousMessage)
+      );
+      pState.previousMessage = pMessage;
+      pState.previousTime = lTime;
+    }
+  };
+}
 
-    pStream.write(formatPerfLine(lTime, lPreviousTime, lPreviousMessage));
-    lPreviousMessage = pMessage;
-    lPreviousTime = lTime;
-  });
+function writeEndMessage(pState, pStream, pMaxLogLevel) {
+  return (_pMessage, pLevel = 0) => {
+    if (pLevel <= pMaxLogLevel) {
+      const lTime = process.uptime();
 
-  bus.on("end", () => {
-    const lTime = process.uptime();
-    pStream.write(
-      formatPerfLine(
-        lTime,
-        lPreviousTime,
-        `really done (${formatTime(lTime).trim()})`
-      )
-    );
-  });
+      pStream.write(
+        formatPerfLine(
+          lTime,
+          pState.previousTime,
+          `really done (${formatTime(lTime).trim()})`
+        )
+      );
+      pStream.end();
+    }
+  };
+}
+
+module.exports = function setUpTimeLogListener(
+  pMaxLogLevel = bus.levels.INFO,
+  pStream = process.stderr
+) {
+  let lState = {
+    previousMessage: "start of node process",
+    previousTime: 0,
+  };
+
+  bus.on("start", writeHeader(pStream, pMaxLogLevel));
+
+  bus.on("progress", writeProgressMessage(lState, pStream, pMaxLogLevel));
+
+  bus.on("end", writeEndMessage(lState, pStream, pMaxLogLevel));
 };
