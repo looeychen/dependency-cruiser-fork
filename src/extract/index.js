@@ -1,3 +1,5 @@
+/* eslint-disable complexity */
+/* eslint-disable max-lines-per-function */
 const _uniqBy = require("lodash/uniqBy");
 const _spread = require("lodash/spread");
 const _concat = require("lodash/concat");
@@ -16,14 +18,25 @@ function extractRecursive(
   pTranspileOptions
 ) {
   pVisited.add(pFileName);
+  const extractDeps = getDependencies(
+    pFileName,
+    pCruiseOptions,
+    pResolveOptions,
+    pTranspileOptions
+  );
   const lDependencies =
     pCruiseOptions.maxDepth <= 0 || pDepth < pCruiseOptions.maxDepth
-      ? getDependencies(
-          pFileName,
-          pCruiseOptions,
-          pResolveOptions,
-          pTranspileOptions
-        )
+      ? extractDeps.dependencies
+      : [];
+
+  const lFunctionDeclarations =
+    pCruiseOptions.maxDepth <= 0 || pDepth < pCruiseOptions.maxDepth
+      ? extractDeps.functionDeclarations
+      : [];
+
+  const lCallExpressions =
+    pCruiseOptions.maxDepth <= 0 || pDepth < pCruiseOptions.maxDepth
+      ? extractDeps.callExpressions
       : [];
 
   return lDependencies
@@ -50,6 +63,8 @@ function extractRecursive(
         {
           source: pathToPosix(pFileName),
           dependencies: lDependencies,
+          functionDeclarations: lFunctionDeclarations,
+          callExpressions: lCallExpressions,
         },
       ]
     );

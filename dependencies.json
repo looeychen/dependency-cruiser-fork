@@ -1,0 +1,4275 @@
+{
+    "modules": [
+        {
+            "source": "../../paas/data-cbm/action/index.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/dynamic.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../utils/dynamic",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getTemplateValue",
+                            "local": "getTemplateValue"
+                        },
+                        {
+                            "imported": "updateObservableScopeData",
+                            "local": "updateObservableScopeData"
+                        },
+                        {
+                            "imported": "addListItemScopeData",
+                            "local": "addListItemScopeData"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/utils/dynamicParamAssignValue.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../utils/dynamicParamAssignValue",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "dynamicParamAssignValue"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/utils/serviceRequest.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../utils/serviceRequest",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "serviceRequest"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "@app/makePhoneCall",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "@app/makePhoneCall",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "makePhoneCall"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "@platform/view",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "@platform/view",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "pruneCache",
+                            "local": "pruneCache"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [],
+            "callExpressions": [
+                {
+                    "callExpressionName": "updateObservableScopeData",
+                    "loc": {
+                        "start": {
+                            "line": 26,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 26,
+                            "column": 75
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/dynamic",
+                        "functionName": "updateObservableScopeData"
+                    }
+                },
+                {
+                    "callExpressionName": "dynamicParamAssignValue",
+                    "loc": {
+                        "start": {
+                            "line": 43,
+                            "column": 32
+                        },
+                        "end": {
+                            "line": 43,
+                            "column": 79
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/dynamicParamAssignValue",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "dynamicParamAssignValue",
+                    "loc": {
+                        "start": {
+                            "line": 50,
+                            "column": 31
+                        },
+                        "end": {
+                            "line": 50,
+                            "column": 78
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/dynamicParamAssignValue",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "pruneCache",
+                    "loc": {
+                        "start": {
+                            "line": 54,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 54,
+                            "column": 28
+                        }
+                    },
+                    "callDepend": {
+                        "source": "@platform/view",
+                        "functionName": "pruneCache"
+                    }
+                },
+                {
+                    "callExpressionName": "serviceRequest",
+                    "loc": {
+                        "start": {
+                            "line": 103,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 103,
+                            "column": 64
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/serviceRequest",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "getTemplateValue",
+                    "loc": {
+                        "start": {
+                            "line": 116,
+                            "column": 25
+                        },
+                        "end": {
+                            "line": 116,
+                            "column": 84
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/dynamic",
+                        "functionName": "getTemplateValue"
+                    }
+                },
+                {
+                    "callExpressionName": "addListItemScopeData",
+                    "loc": {
+                        "start": {
+                            "line": 133,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 133,
+                            "column": 105
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/dynamic",
+                        "functionName": "addListItemScopeData"
+                    }
+                },
+                {
+                    "callExpressionName": "getTemplateValue",
+                    "loc": {
+                        "start": {
+                            "line": 146,
+                            "column": 33
+                        },
+                        "end": {
+                            "line": 146,
+                            "column": 87
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/dynamic",
+                        "functionName": "getTemplateValue"
+                    }
+                },
+                {
+                    "callExpressionName": "makePhoneCall",
+                    "loc": {
+                        "start": {
+                            "line": 145,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 147,
+                            "column": 18
+                        }
+                    },
+                    "callDepend": {
+                        "source": "@app/makePhoneCall",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "getTemplateValue",
+                    "loc": {
+                        "start": {
+                            "line": 167,
+                            "column": 39
+                        },
+                        "end": {
+                            "line": 167,
+                            "column": 93
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/dynamic",
+                        "functionName": "getTemplateValue"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "@app/makePhoneCall",
+            "followable": false,
+            "coreModule": false,
+            "couldNotResolve": true,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "unknown"
+            ],
+            "dependencies": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "@platform/view",
+            "followable": false,
+            "coreModule": false,
+            "couldNotResolve": true,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "unknown"
+            ],
+            "dependencies": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/utils/dynamic.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/domain/entities/DataObjectEntity.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../domain/entities/DataObjectEntity",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "DataObjectEntity"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "lodash",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "license": "MIT",
+                    "module": "lodash",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "_"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mobx-state-tree",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mobx-state-tree",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getSnapshot",
+                            "local": "getSnapshot"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "vue",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "vue",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "Vue"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [
+                {
+                    "functionName": "parseSource",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 9,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 19,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "findDynamicScopeData",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 26,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 58,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "getDynamicValueFromObject",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 60,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 66,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "getTemplateValue",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 73,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 91,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "updateObservableScopeData",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 96,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 131,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "addListItemScopeData",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 136,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 180,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [
+                {
+                    "callExpressionName": "_.get",
+                    "loc": {
+                        "start": {
+                            "line": 50,
+                            "column": 26
+                        },
+                        "end": {
+                            "line": 50,
+                            "column": 59
+                        }
+                    },
+                    "callDepend": {
+                        "source": "lodash",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "_.get",
+                    "loc": {
+                        "start": {
+                            "line": 64,
+                            "column": 30
+                        },
+                        "end": {
+                            "line": 64,
+                            "column": 53
+                        }
+                    },
+                    "callDepend": {
+                        "source": "lodash",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "_.isUndefined",
+                    "loc": {
+                        "start": {
+                            "line": 65,
+                            "column": 12
+                        },
+                        "end": {
+                            "line": 65,
+                            "column": 34
+                        }
+                    },
+                    "callDepend": {
+                        "source": "lodash",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "Vue.set",
+                    "loc": {
+                        "start": {
+                            "line": 114,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 114,
+                            "column": 68
+                        }
+                    },
+                    "callDepend": {
+                        "source": "vue",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "Vue.set",
+                    "loc": {
+                        "start": {
+                            "line": 116,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 116,
+                            "column": 58
+                        }
+                    },
+                    "callDepend": {
+                        "source": "vue",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "getSnapshot",
+                    "loc": {
+                        "start": {
+                            "line": 141,
+                            "column": 25
+                        },
+                        "end": {
+                            "line": 141,
+                            "column": 64
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "getSnapshot"
+                    }
+                },
+                {
+                    "callExpressionName": "Vue.set",
+                    "loc": {
+                        "start": {
+                            "line": 153,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 153,
+                            "column": 70
+                        }
+                    },
+                    "callDepend": {
+                        "source": "vue",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "Vue.set",
+                    "loc": {
+                        "start": {
+                            "line": 155,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 155,
+                            "column": 65
+                        }
+                    },
+                    "callDepend": {
+                        "source": "vue",
+                        "functionName": "default"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "lodash",
+            "followable": false,
+            "coreModule": false,
+            "couldNotResolve": true,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "unknown"
+            ],
+            "dependencies": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "mobx-state-tree",
+            "followable": false,
+            "coreModule": false,
+            "couldNotResolve": true,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "unknown"
+            ],
+            "dependencies": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "vue",
+            "followable": false,
+            "coreModule": false,
+            "couldNotResolve": true,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "unknown"
+            ],
+            "dependencies": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/domain/entities/DataObjectEntity.js",
+            "dependencies": [
+                {
+                    "resolved": "lodash",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "license": "MIT",
+                    "module": "lodash",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "_"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mobx-state-tree",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mobx-state-tree",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "types",
+                            "local": "types"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [],
+            "callExpressions": [
+                {
+                    "callExpressionName": "types.maybeNull",
+                    "loc": {
+                        "start": {
+                            "line": 19,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 19,
+                            "column": 49
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.maybeNull",
+                    "loc": {
+                        "start": {
+                            "line": 20,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 20,
+                            "column": 49
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.maybeNull",
+                    "loc": {
+                        "start": {
+                            "line": 21,
+                            "column": 21
+                        },
+                        "end": {
+                            "line": 21,
+                            "column": 51
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.maybeNull",
+                    "loc": {
+                        "start": {
+                            "line": 22,
+                            "column": 22
+                        },
+                        "end": {
+                            "line": 22,
+                            "column": 51
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.maybeNull",
+                    "loc": {
+                        "start": {
+                            "line": 23,
+                            "column": 18
+                        },
+                        "end": {
+                            "line": 23,
+                            "column": 47
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.maybeNull",
+                    "loc": {
+                        "start": {
+                            "line": 24,
+                            "column": 18
+                        },
+                        "end": {
+                            "line": 24,
+                            "column": 47
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.literal",
+                    "loc": {
+                        "start": {
+                            "line": 25,
+                            "column": 80
+                        },
+                        "end": {
+                            "line": 25,
+                            "column": 99
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.union",
+                    "loc": {
+                        "start": {
+                            "line": 25,
+                            "column": 40
+                        },
+                        "end": {
+                            "line": 25,
+                            "column": 100
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 25,
+                            "column": 25
+                        },
+                        "end": {
+                            "line": 25,
+                            "column": 107
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.array",
+                    "loc": {
+                        "start": {
+                            "line": 26,
+                            "column": 25
+                        },
+                        "end": {
+                            "line": 26,
+                            "column": 50
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.array",
+                    "loc": {
+                        "start": {
+                            "line": 27,
+                            "column": 25
+                        },
+                        "end": {
+                            "line": 27,
+                            "column": 50
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.maybeNull",
+                    "loc": {
+                        "start": {
+                            "line": 30,
+                            "column": 18
+                        },
+                        "end": {
+                            "line": 30,
+                            "column": 47
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.array",
+                    "loc": {
+                        "start": {
+                            "line": 31,
+                            "column": 19
+                        },
+                        "end": {
+                            "line": 31,
+                            "column": 44
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.maybeNull",
+                    "loc": {
+                        "start": {
+                            "line": 32,
+                            "column": 19
+                        },
+                        "end": {
+                            "line": 32,
+                            "column": 48
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.late",
+                    "loc": {
+                        "start": {
+                            "line": 77,
+                            "column": 70
+                        },
+                        "end": {
+                            "line": 77,
+                            "column": 93
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.array",
+                    "loc": {
+                        "start": {
+                            "line": 77,
+                            "column": 58
+                        },
+                        "end": {
+                            "line": 77,
+                            "column": 94
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 77,
+                            "column": 43
+                        },
+                        "end": {
+                            "line": 77,
+                            "column": 99
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.array",
+                    "loc": {
+                        "start": {
+                            "line": 77,
+                            "column": 117
+                        },
+                        "end": {
+                            "line": 77,
+                            "column": 230
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 77,
+                            "column": 102
+                        },
+                        "end": {
+                            "line": 77,
+                            "column": 235
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.late",
+                    "loc": {
+                        "start": {
+                            "line": 79,
+                            "column": 68
+                        },
+                        "end": {
+                            "line": 79,
+                            "column": 91
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.map",
+                    "loc": {
+                        "start": {
+                            "line": 79,
+                            "column": 58
+                        },
+                        "end": {
+                            "line": 79,
+                            "column": 92
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 79,
+                            "column": 43
+                        },
+                        "end": {
+                            "line": 79,
+                            "column": 97
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 79,
+                            "column": 100
+                        },
+                        "end": {
+                            "line": 79,
+                            "column": 220
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 81,
+                            "column": 31
+                        },
+                        "end": {
+                            "line": 81,
+                            "column": 109
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "_.reduce",
+                    "loc": {
+                        "start": {
+                            "line": 66,
+                            "column": 36
+                        },
+                        "end": {
+                            "line": 84,
+                            "column": 14
+                        }
+                    },
+                    "callDepend": {
+                        "source": "lodash",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "types.model",
+                    "loc": {
+                        "start": {
+                            "line": 85,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 85,
+                            "column": 36
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.model",
+                    "loc": {
+                        "start": {
+                            "line": 94,
+                            "column": 19
+                        },
+                        "end": {
+                            "line": 94,
+                            "column": 34
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/utils/dynamicParamAssignValue.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/domain/entities/DataObjectEntity.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../domain/entities/DataObjectEntity",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "DataObjectEntity"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "@platform/token",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "@platform/token",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getToken",
+                            "local": "getToken"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "lodash",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "license": "MIT",
+                    "module": "lodash",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "_"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mobx-state-tree",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mobx-state-tree",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getSnapshot",
+                            "local": "getSnapshot"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [
+                {
+                    "functionName": "getComponentScopeData",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 9,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 27,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "getFilterKeyword",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 30,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 35,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "getDataObjectDefaultValue",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 38,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 51,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "dynamicParamAssignValue",
+                    "exportDefault": true,
+                    "loc": {
+                        "start": {
+                            "line": 59,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 107,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [
+                {
+                    "callExpressionName": "getToken",
+                    "loc": {
+                        "start": {
+                            "line": 64,
+                            "column": 50
+                        },
+                        "end": {
+                            "line": 64,
+                            "column": 60
+                        }
+                    },
+                    "callDepend": {
+                        "source": "@platform/token",
+                        "functionName": "getToken"
+                    }
+                },
+                {
+                    "callExpressionName": "getSnapshot",
+                    "loc": {
+                        "start": {
+                            "line": 93,
+                            "column": 19
+                        },
+                        "end": {
+                            "line": 93,
+                            "column": 78
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "getSnapshot"
+                    }
+                },
+                {
+                    "callExpressionName": "_.get",
+                    "loc": {
+                        "start": {
+                            "line": 102,
+                            "column": 19
+                        },
+                        "end": {
+                            "line": 102,
+                            "column": 46
+                        }
+                    },
+                    "callDepend": {
+                        "source": "lodash",
+                        "functionName": "default"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "@platform/token",
+            "followable": false,
+            "coreModule": false,
+            "couldNotResolve": true,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "unknown"
+            ],
+            "dependencies": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/utils/serviceRequest.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/dynamicParamAssignValue.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./dynamicParamAssignValue",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "dynamicParamAssignValue"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/utils/qs/index.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./qs",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "all",
+                            "local": "Qs"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "@app/toast",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "@app/toast",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "showToast",
+                            "local": "showToast"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "@platform/http",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "@platform/http",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "http",
+                            "local": "http"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "lodash",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "license": "MIT",
+                    "module": "lodash",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "_"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [
+                {
+                    "functionName": "getParamValue",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 13,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 17,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "getParams",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 20,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 27,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "getPathUrl",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 30,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 38,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "getObject",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 41,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 51,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "serviceRequest",
+                    "exportDefault": true,
+                    "loc": {
+                        "start": {
+                            "line": 57,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 118,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [
+                {
+                    "callExpressionName": "dynamicParamAssignValue",
+                    "loc": {
+                        "start": {
+                            "line": 15,
+                            "column": 56
+                        },
+                        "end": {
+                            "line": 15,
+                            "column": 108
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./dynamicParamAssignValue",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "dynamicParamAssignValue",
+                    "loc": {
+                        "start": {
+                            "line": 45,
+                            "column": 30
+                        },
+                        "end": {
+                            "line": 45,
+                            "column": 76
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./dynamicParamAssignValue",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "Qs.stringify",
+                    "loc": {
+                        "start": {
+                            "line": 72,
+                            "column": 19
+                        },
+                        "end": {
+                            "line": 72,
+                            "column": 66
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./qs",
+                        "functionName": "stringify"
+                    }
+                },
+                {
+                    "callExpressionName": "http",
+                    "loc": {
+                        "start": {
+                            "line": 83,
+                            "column": 23
+                        },
+                        "end": {
+                            "line": 83,
+                            "column": 40
+                        }
+                    },
+                    "callDepend": {
+                        "source": "@platform/http",
+                        "functionName": "http"
+                    }
+                },
+                {
+                    "callExpressionName": "showToast",
+                    "loc": {
+                        "start": {
+                            "line": 86,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 89,
+                            "column": 10
+                        }
+                    },
+                    "callDepend": {
+                        "source": "@app/toast",
+                        "functionName": "showToast"
+                    }
+                },
+                {
+                    "callExpressionName": "showToast",
+                    "loc": {
+                        "start": {
+                            "line": 101,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 105,
+                            "column": 10
+                        }
+                    },
+                    "callDepend": {
+                        "source": "@app/toast",
+                        "functionName": "showToast"
+                    }
+                },
+                {
+                    "callExpressionName": "_.get",
+                    "loc": {
+                        "start": {
+                            "line": 114,
+                            "column": 14
+                        },
+                        "end": {
+                            "line": 114,
+                            "column": 41
+                        }
+                    },
+                    "callDepend": {
+                        "source": "lodash",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "_.get",
+                    "loc": {
+                        "start": {
+                            "line": 115,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 115,
+                            "column": 40
+                        }
+                    },
+                    "callDepend": {
+                        "source": "lodash",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "_.get",
+                    "loc": {
+                        "start": {
+                            "line": 116,
+                            "column": 14
+                        },
+                        "end": {
+                            "line": 116,
+                            "column": 45
+                        }
+                    },
+                    "callDepend": {
+                        "source": "lodash",
+                        "functionName": "default"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "@app/toast",
+            "followable": false,
+            "coreModule": false,
+            "couldNotResolve": true,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "unknown"
+            ],
+            "dependencies": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "@platform/http",
+            "followable": false,
+            "coreModule": false,
+            "couldNotResolve": true,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "unknown"
+            ],
+            "dependencies": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/utils/qs/index.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/qs/formats.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./formats",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "formats"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/utils/qs/parse.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./parse",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "parse"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/utils/qs/stringify.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./stringify",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "stringify"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [],
+            "callExpressions": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/utils/qs/formats.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/qs/utils.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./utils",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "all",
+                            "local": "util"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [],
+            "callExpressions": [
+                {
+                    "callExpressionName": "util.assign",
+                    "loc": {
+                        "start": {
+                            "line": 13,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 26,
+                            "column": 1
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./utils",
+                        "functionName": "assign"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/utils/qs/utils.js",
+            "dependencies": [],
+            "functionDeclarations": [
+                {
+                    "functionName": "compactQueue",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 15,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 32,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "arrayToObject",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 34,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 43,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "merge",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 45,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 100,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "assign",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 102,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 107,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "decode",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 109,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 121,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "encode",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 123,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 184,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "compact",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 186,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 208,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "isRegExp",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 210,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 212,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "isBuffer",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 214,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 220,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "combine",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 222,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 224,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "maybeMap",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 226,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 235,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/utils/qs/parse.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/qs/utils.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./utils",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "all",
+                            "local": "utils"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [
+                {
+                    "functionName": "interpretNumericEntities",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 26,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 30,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "parseArrayValue",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 32,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 38,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "parseValues",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 50,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 112,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "parseObject",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 114,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 147,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "parseKeys",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 149,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 201,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "normalizeParseOptions",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 203,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 235,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "default",
+                    "exportDefault": true,
+                    "loc": {
+                        "start": {
+                            "line": 237,
+                            "column": 0
+                        },
+                        "end": {
+                            "line": 257,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [
+                {
+                    "callExpressionName": "utils.maybeMap",
+                    "loc": {
+                        "start": {
+                            "line": 88,
+                            "column": 18
+                        },
+                        "end": {
+                            "line": 93,
+                            "column": 13
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./utils",
+                        "functionName": "maybeMap"
+                    }
+                },
+                {
+                    "callExpressionName": "utils.combine",
+                    "loc": {
+                        "start": {
+                            "line": 105,
+                            "column": 23
+                        },
+                        "end": {
+                            "line": 105,
+                            "column": 51
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./utils",
+                        "functionName": "combine"
+                    }
+                },
+                {
+                    "callExpressionName": "utils.isRegExp",
+                    "loc": {
+                        "start": {
+                            "line": 225,
+                            "column": 57
+                        },
+                        "end": {
+                            "line": 225,
+                            "column": 87
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./utils",
+                        "functionName": "isRegExp"
+                    }
+                },
+                {
+                    "callExpressionName": "utils.merge",
+                    "loc": {
+                        "start": {
+                            "line": 253,
+                            "column": 14
+                        },
+                        "end": {
+                            "line": 253,
+                            "column": 47
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./utils",
+                        "functionName": "merge"
+                    }
+                },
+                {
+                    "callExpressionName": "utils.compact",
+                    "loc": {
+                        "start": {
+                            "line": 256,
+                            "column": 11
+                        },
+                        "end": {
+                            "line": 256,
+                            "column": 29
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./utils",
+                        "functionName": "compact"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/utils/qs/stringify.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/qs/formats.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./formats",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "formats"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/utils/qs/utils.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./utils",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "all",
+                            "local": "utils"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [
+                {
+                    "functionName": "pushToArray",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 23,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 25,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "isNonNullishPrimitive",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 50,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 56,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "stringify",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 58,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 147,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "normalizeStringifyOptions",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 149,
+                            "column": 4
+                        },
+                        "end": {
+                            "line": 193,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "default",
+                    "exportDefault": true,
+                    "loc": {
+                        "start": {
+                            "line": 195,
+                            "column": 0
+                        },
+                        "end": {
+                            "line": 272,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [
+                {
+                    "callExpressionName": "utils.maybeMap",
+                    "loc": {
+                        "start": {
+                            "line": 79,
+                            "column": 14
+                        },
+                        "end": {
+                            "line": 84,
+                            "column": 10
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./utils",
+                        "functionName": "maybeMap"
+                    }
+                },
+                {
+                    "callExpressionName": "utils.isBuffer",
+                    "loc": {
+                        "start": {
+                            "line": 95,
+                            "column": 38
+                        },
+                        "end": {
+                            "line": 95,
+                            "column": 57
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./utils",
+                        "functionName": "isBuffer"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/domain/entities/DataContainerEntity.js",
+            "dependencies": [],
+            "functionDeclarations": [],
+            "callExpressions": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/domain/entities/FilterEntity.js",
+            "dependencies": [],
+            "functionDeclarations": [],
+            "callExpressions": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/domain/entities/SelectEntity.js",
+            "dependencies": [],
+            "functionDeclarations": [],
+            "callExpressions": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/domain/services/DataContainerService.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/metadataParse.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../../utils/metadataParse",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getPageId",
+                            "local": "getPageId"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/utils/serviceRequest.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../../utils/serviceRequest",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "serviceRequest"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/domain/entities/DataContainerEntity.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../entities/DataContainerEntity",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "DataContainerEntity"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/domain/entities/DataObjectEntity.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../entities/DataObjectEntity",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "DataObjectEntity"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [],
+            "callExpressions": [
+                {
+                    "callExpressionName": "getPageId",
+                    "callDepend": {
+                        "source": "../../utils/metadataParse",
+                        "functionName": "getPageId"
+                    }
+                },
+                {
+                    "callExpressionName": "serviceRequest",
+                    "callDepend": {
+                        "source": "../../utils/serviceRequest",
+                        "functionName": "default"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/utils/metadataParse.js",
+            "dependencies": [],
+            "functionDeclarations": [
+                {
+                    "functionName": "getDataComponentType",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 5,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 23,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "getPageId",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 28,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 37,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/domain/services/FilterService.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/serviceRequest.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../../utils/serviceRequest",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "serviceRequest"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/domain/entities/DataObjectEntity.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../entities/DataObjectEntity",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "DataObjectEntity"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/domain/entities/FilterEntity.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../entities/FilterEntity",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "FilterEntity"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [],
+            "callExpressions": [
+                {
+                    "callExpressionName": "serviceRequest",
+                    "callDepend": {
+                        "source": "../../utils/serviceRequest",
+                        "functionName": "default"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/domain/services/SelectService.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/serviceRequest.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../../utils/serviceRequest",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "serviceRequest"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/domain/entities/DataObjectEntity.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../entities/DataObjectEntity",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "DataObjectEntity"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/domain/entities/SelectEntity.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../entities/SelectEntity",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "SelectEntity"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [],
+            "callExpressions": [
+                {
+                    "callExpressionName": "serviceRequest",
+                    "callDepend": {
+                        "source": "../../utils/serviceRequest",
+                        "functionName": "default"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/store/index.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/domain/services/DataContainerService.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../domain/services/DataContainerService",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "DataContainerService"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/domain/services/FilterService.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../domain/services/FilterService",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "FilterService"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/domain/services/SelectService.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../domain/services/SelectService",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "SelectService"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "lodash",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "license": "MIT",
+                    "module": "lodash",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "_"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mobx-state-tree",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mobx-state-tree",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "types",
+                            "local": "types"
+                        },
+                        {
+                            "imported": "flow",
+                            "local": "flow"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "vue",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "vue",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "Vue"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [
+                {
+                    "functionName": "createContainerStore",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 19,
+                            "column": 0
+                        },
+                        "end": {
+                            "line": 79,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "createOptionStore",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 84,
+                            "column": 0
+                        },
+                        "end": {
+                            "line": 97,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "createFilterStore",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 102,
+                            "column": 0
+                        },
+                        "end": {
+                            "line": 115,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 12,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 12,
+                            "column": 47
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 13,
+                            "column": 18
+                        },
+                        "end": {
+                            "line": 13,
+                            "column": 50
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.model",
+                    "loc": {
+                        "start": {
+                            "line": 11,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 14,
+                            "column": 2
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.array",
+                    "loc": {
+                        "start": {
+                            "line": 24,
+                            "column": 70
+                        },
+                        "end": {
+                            "line": 24,
+                            "column": 98
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 28,
+                            "column": 14
+                        },
+                        "end": {
+                            "line": 28,
+                            "column": 57
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 29,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 29,
+                            "column": 46
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 30,
+                            "column": 14
+                        },
+                        "end": {
+                            "line": 30,
+                            "column": 45
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 31,
+                            "column": 25
+                        },
+                        "end": {
+                            "line": 31,
+                            "column": 61
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 32,
+                            "column": 19
+                        },
+                        "end": {
+                            "line": 32,
+                            "column": 50
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.model",
+                    "loc": {
+                        "start": {
+                            "line": 27,
+                            "column": 27
+                        },
+                        "end": {
+                            "line": 33,
+                            "column": 6
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "_.isEmpty",
+                    "loc": {
+                        "start": {
+                            "line": 52,
+                            "column": 43
+                        },
+                        "end": {
+                            "line": 52,
+                            "column": 71
+                        }
+                    },
+                    "callDepend": {
+                        "source": "lodash",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "flow",
+                    "loc": {
+                        "start": {
+                            "line": 35,
+                            "column": 26
+                        },
+                        "end": {
+                            "line": 64,
+                            "column": 10
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "flow"
+                    }
+                },
+                {
+                    "callExpressionName": "types.array",
+                    "loc": {
+                        "start": {
+                            "line": 88,
+                            "column": 32
+                        },
+                        "end": {
+                            "line": 88,
+                            "column": 56
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 88,
+                            "column": 17
+                        },
+                        "end": {
+                            "line": 88,
+                            "column": 61
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.model",
+                    "loc": {
+                        "start": {
+                            "line": 87,
+                            "column": 11
+                        },
+                        "end": {
+                            "line": 89,
+                            "column": 6
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "flow",
+                    "loc": {
+                        "start": {
+                            "line": 91,
+                            "column": 20
+                        },
+                        "end": {
+                            "line": 95,
+                            "column": 10
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "flow"
+                    }
+                },
+                {
+                    "callExpressionName": "types.array",
+                    "loc": {
+                        "start": {
+                            "line": 106,
+                            "column": 39
+                        },
+                        "end": {
+                            "line": 106,
+                            "column": 63
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.optional",
+                    "loc": {
+                        "start": {
+                            "line": 106,
+                            "column": 24
+                        },
+                        "end": {
+                            "line": 106,
+                            "column": 68
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "types.model",
+                    "loc": {
+                        "start": {
+                            "line": 105,
+                            "column": 11
+                        },
+                        "end": {
+                            "line": 107,
+                            "column": 6
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "types"
+                    }
+                },
+                {
+                    "callExpressionName": "flow",
+                    "loc": {
+                        "start": {
+                            "line": 109,
+                            "column": 34
+                        },
+                        "end": {
+                            "line": 113,
+                            "column": 10
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "flow"
+                    }
+                },
+                {
+                    "callExpressionName": "Vue.nextTick",
+                    "loc": {
+                        "start": {
+                            "line": 196,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 198,
+                            "column": 18
+                        }
+                    },
+                    "callDepend": {
+                        "source": "vue",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "Vue.directive",
+                    "loc": {
+                        "start": {
+                            "line": 194,
+                            "column": 8
+                        },
+                        "end": {
+                            "line": 221,
+                            "column": 10
+                        }
+                    },
+                    "callDepend": {
+                        "source": "vue",
+                        "functionName": "default"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/utils/vueHocUtils.js",
+            "dependencies": [],
+            "functionDeclarations": [
+                {
+                    "functionName": "getWrappedComponentProps",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 5,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 11,
+                            "column": 1
+                        }
+                    }
+                },
+                {
+                    "functionName": "renderWrappedComponent",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 20,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 45,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/wrapper/connect.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/metadataParse.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../utils/metadataParse",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getDataComponentType",
+                            "local": "getDataComponentType"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/wrapper/dataContainerWrapper.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./dataContainerWrapper",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "dataContainerWrapper"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/wrapper/filtrateWrapper.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./filtrateWrapper",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "filtrateWrapper"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/wrapper/selectWrapper.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "./selectWrapper",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "selectWrapper"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [
+                {
+                    "functionName": "dataContainerConnect",
+                    "exportDefault": true,
+                    "loc": {
+                        "start": {
+                            "line": 11,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 25,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [
+                {
+                    "callExpressionName": "getDataComponentType",
+                    "loc": {
+                        "start": {
+                            "line": 13,
+                            "column": 21
+                        },
+                        "end": {
+                            "line": 13,
+                            "column": 60
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/metadataParse",
+                        "functionName": "getDataComponentType"
+                    }
+                },
+                {
+                    "callExpressionName": "dataContainerWrapper",
+                    "loc": {
+                        "start": {
+                            "line": 15,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 15,
+                            "column": 112
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./dataContainerWrapper",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "selectWrapper",
+                    "loc": {
+                        "start": {
+                            "line": 18,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 18,
+                            "column": 92
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./selectWrapper",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "filtrateWrapper",
+                    "loc": {
+                        "start": {
+                            "line": 22,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 22,
+                            "column": 94
+                        }
+                    },
+                    "callDepend": {
+                        "source": "./filtrateWrapper",
+                        "functionName": "default"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/wrapper/dataContainerWrapper.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/vueHocUtils.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../utils/vueHocUtils",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getWrappedComponentProps",
+                            "local": "getWrappedComponentProps"
+                        },
+                        {
+                            "imported": "renderWrappedComponent",
+                            "local": "renderWrappedComponent"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "lodash",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "license": "MIT",
+                    "module": "lodash",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "_"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mitt",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mitt",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "default",
+                            "local": "mitt"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mobx-state-tree",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mobx-state-tree",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getSnapshot",
+                            "local": "getSnapshot"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mobx-vue",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mobx-vue",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "observer",
+                            "local": "observer"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [
+                {
+                    "functionName": "createContainerHoc",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 14,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 268,
+                            "column": 2
+                        }
+                    }
+                },
+                {
+                    "functionName": "dataContainerWrapper",
+                    "exportDefault": true,
+                    "loc": {
+                        "start": {
+                            "line": 270,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 276,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [
+                {
+                    "callExpressionName": "mitt",
+                    "loc": {
+                        "start": {
+                            "line": 8,
+                            "column": 16
+                        },
+                        "end": {
+                            "line": 8,
+                            "column": 22
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mitt",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "getWrappedComponentProps",
+                    "loc": {
+                        "start": {
+                            "line": 70,
+                            "column": 11
+                        },
+                        "end": {
+                            "line": 70,
+                            "column": 74
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/vueHocUtils",
+                        "functionName": "getWrappedComponentProps"
+                    }
+                },
+                {
+                    "callExpressionName": "getSnapshot",
+                    "loc": {
+                        "start": {
+                            "line": 131,
+                            "column": 45
+                        },
+                        "end": {
+                            "line": 131,
+                            "column": 62
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "getSnapshot"
+                    }
+                },
+                {
+                    "callExpressionName": "renderWrappedComponent",
+                    "loc": {
+                        "start": {
+                            "line": 130,
+                            "column": 19
+                        },
+                        "end": {
+                            "line": 145,
+                            "column": 14
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/vueHocUtils",
+                        "functionName": "renderWrappedComponent"
+                    }
+                },
+                {
+                    "callExpressionName": "renderWrappedComponent",
+                    "loc": {
+                        "start": {
+                            "line": 149,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 153,
+                            "column": 10
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/vueHocUtils",
+                        "functionName": "renderWrappedComponent"
+                    }
+                },
+                {
+                    "callExpressionName": "_.isEmpty",
+                    "loc": {
+                        "start": {
+                            "line": 259,
+                            "column": 32
+                        },
+                        "end": {
+                            "line": 259,
+                            "column": 63
+                        }
+                    },
+                    "callDepend": {
+                        "source": "lodash",
+                        "functionName": "default"
+                    }
+                },
+                {
+                    "callExpressionName": "observer",
+                    "loc": {
+                        "start": {
+                            "line": 14,
+                            "column": 115
+                        },
+                        "end": {
+                            "line": 268,
+                            "column": 2
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-vue",
+                        "functionName": "observer"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "mitt",
+            "followable": false,
+            "coreModule": false,
+            "couldNotResolve": true,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "unknown"
+            ],
+            "dependencies": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "mobx-vue",
+            "followable": false,
+            "coreModule": false,
+            "couldNotResolve": true,
+            "matchesDoNotFollow": false,
+            "dependencyTypes": [
+                "unknown"
+            ],
+            "dependencies": [],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/wrapper/filtrateWrapper.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/action/index.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../action",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "dataAction",
+                            "local": "dataAction"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "../../paas/data-cbm/utils/vueHocUtils.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../utils/vueHocUtils",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getWrappedComponentProps",
+                            "local": "getWrappedComponentProps"
+                        },
+                        {
+                            "imported": "renderWrappedComponent",
+                            "local": "renderWrappedComponent"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mobx-state-tree",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mobx-state-tree",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getSnapshot",
+                            "local": "getSnapshot"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mobx-vue",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mobx-vue",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "observer",
+                            "local": "observer"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [
+                {
+                    "functionName": "createFiltrateHoc",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 10,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 82,
+                            "column": 2
+                        }
+                    }
+                },
+                {
+                    "functionName": "filtrateWrapper",
+                    "exportDefault": true,
+                    "loc": {
+                        "start": {
+                            "line": 84,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 90,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [
+                {
+                    "callExpressionName": "getWrappedComponentProps",
+                    "loc": {
+                        "start": {
+                            "line": 64,
+                            "column": 11
+                        },
+                        "end": {
+                            "line": 64,
+                            "column": 74
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/vueHocUtils",
+                        "functionName": "getWrappedComponentProps"
+                    }
+                },
+                {
+                    "callExpressionName": "getSnapshot",
+                    "loc": {
+                        "start": {
+                            "line": 70,
+                            "column": 44
+                        },
+                        "end": {
+                            "line": 70,
+                            "column": 71
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "getSnapshot"
+                    }
+                },
+                {
+                    "callExpressionName": "renderWrappedComponent",
+                    "loc": {
+                        "start": {
+                            "line": 69,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 80,
+                            "column": 10
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/vueHocUtils",
+                        "functionName": "renderWrappedComponent"
+                    }
+                },
+                {
+                    "callExpressionName": "observer",
+                    "loc": {
+                        "start": {
+                            "line": 10,
+                            "column": 101
+                        },
+                        "end": {
+                            "line": 82,
+                            "column": 2
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-vue",
+                        "functionName": "observer"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        },
+        {
+            "source": "../../paas/data-cbm/wrapper/selectWrapper.js",
+            "dependencies": [
+                {
+                    "resolved": "../../paas/data-cbm/utils/vueHocUtils.js",
+                    "coreModule": false,
+                    "followable": true,
+                    "couldNotResolve": false,
+                    "dependencyTypes": [
+                        "local"
+                    ],
+                    "module": "../utils/vueHocUtils",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getWrappedComponentProps",
+                            "local": "getWrappedComponentProps"
+                        },
+                        {
+                            "imported": "renderWrappedComponent",
+                            "local": "renderWrappedComponent"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mobx-state-tree",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mobx-state-tree",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "getSnapshot",
+                            "local": "getSnapshot"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                },
+                {
+                    "resolved": "mobx-vue",
+                    "coreModule": false,
+                    "followable": false,
+                    "couldNotResolve": true,
+                    "dependencyTypes": [
+                        "unknown"
+                    ],
+                    "module": "mobx-vue",
+                    "moduleSystem": "es6",
+                    "dynamic": false,
+                    "exoticallyRequired": false,
+                    "importedFuncs": [
+                        {
+                            "imported": "observer",
+                            "local": "observer"
+                        }
+                    ],
+                    "matchesDoNotFollow": false,
+                    "circular": false,
+                    "valid": true
+                }
+            ],
+            "functionDeclarations": [
+                {
+                    "functionName": "createSelectListHoc",
+                    "exportDefault": false,
+                    "loc": {
+                        "start": {
+                            "line": 9,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 33,
+                            "column": 2
+                        }
+                    }
+                },
+                {
+                    "functionName": "selectListWrapper",
+                    "exportDefault": true,
+                    "loc": {
+                        "start": {
+                            "line": 35,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 41,
+                            "column": 1
+                        }
+                    }
+                }
+            ],
+            "callExpressions": [
+                {
+                    "callExpressionName": "getWrappedComponentProps",
+                    "loc": {
+                        "start": {
+                            "line": 27,
+                            "column": 11
+                        },
+                        "end": {
+                            "line": 27,
+                            "column": 74
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/vueHocUtils",
+                        "functionName": "getWrappedComponentProps"
+                    }
+                },
+                {
+                    "callExpressionName": "getSnapshot",
+                    "loc": {
+                        "start": {
+                            "line": 31,
+                            "column": 86
+                        },
+                        "end": {
+                            "line": 31,
+                            "column": 106
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-state-tree",
+                        "functionName": "getSnapshot"
+                    }
+                },
+                {
+                    "callExpressionName": "renderWrappedComponent",
+                    "loc": {
+                        "start": {
+                            "line": 31,
+                            "column": 15
+                        },
+                        "end": {
+                            "line": 31,
+                            "column": 112
+                        }
+                    },
+                    "callDepend": {
+                        "source": "../utils/vueHocUtils",
+                        "functionName": "renderWrappedComponent"
+                    }
+                },
+                {
+                    "callExpressionName": "observer",
+                    "loc": {
+                        "start": {
+                            "line": 9,
+                            "column": 103
+                        },
+                        "end": {
+                            "line": 33,
+                            "column": 2
+                        }
+                    },
+                    "callDepend": {
+                        "source": "mobx-vue",
+                        "functionName": "observer"
+                    }
+                }
+            ],
+            "orphan": false,
+            "valid": true
+        }
+    ],
+    "summary": {
+        "violations": [],
+        "error": 0,
+        "warn": 0,
+        "info": 0,
+        "totalCruised": 33,
+        "totalDependenciesCruised": 59,
+        "optionsUsed": {
+            "combinedDependencies": false,
+            "exclude": {
+                "path": "depcruise.js"
+            },
+            "externalModuleResolutionStrategy": "node_modules",
+            "moduleSystems": [
+                "amd",
+                "cjs",
+                "es6",
+                "tsd"
+            ],
+            "preserveSymlinks": false,
+            "tsPreCompilationDeps": false,
+            "exoticRequireStrings": [],
+            "args": "../../paas/data-cbm"
+        }
+    }
+}

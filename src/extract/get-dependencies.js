@@ -7,6 +7,8 @@ const extractES6Deps = require("./ast-extractors/extract-es6-deps");
 const extractCommonJSDeps = require("./ast-extractors/extract-cjs-deps");
 const extractAMDDeps = require("./ast-extractors/extract-amd-deps");
 const extractTypeScriptDeps = require("./ast-extractors/extract-typescript-deps");
+const extractExportedFunctions = require("./ast-extractors/extract-exported-functions");
+const extractCallExpressions = require("./ast-extractors/extract-call-expressions");
 const toJavascriptAST = require("./parse/to-javascript-ast");
 const toTypescriptAST = require("./parse/to-typescript-ast");
 const detectPreCompilationNess = require("./utl/detect-pre-compilation-ness");
@@ -28,6 +30,9 @@ function shouldUseTSC(pOptions, pFileName) {
 
 function extractFromJavaScriptAST(pOptions, pFileName, pTranspileOptions) {
   let lDependencies = [];
+  let lFunctionDeclarations = [];
+  let lCallExpressions = [];
+
   const lAST = toJavascriptAST.getASTCached(
     path.join(pOptions.baseDir, pFileName),
     pTranspileOptions
@@ -48,11 +53,23 @@ function extractFromJavaScriptAST(pOptions, pFileName, pTranspileOptions) {
     extractAMDDeps(lAST, lDependencies, pOptions.exoticRequireStrings);
   }
 
-  return lDependencies;
+  // 提取出当前模块导出的函数声明信息
+  extractExportedFunctions(lAST, lFunctionDeclarations);
+
+  // 提取出当前模块的函数调用
+  extractCallExpressions(lAST, lCallExpressions, lDependencies);
+
+  return {
+    lDependencies,
+    lFunctionDeclarations,
+    lCallExpressions,
+  };
 }
 
 function extractDependencies(pCruiseOptions, pFileName, pTranspileOptions) {
   let lDependencies = [];
+  let lFunctionDeclarations = [];
+  let lCallExpressions = [];
 
   if (shouldUseTSC(pCruiseOptions, pFileName)) {
     lDependencies = extractFromTypeScriptAST(
@@ -63,20 +80,35 @@ function extractDependencies(pCruiseOptions, pFileName, pTranspileOptions) {
     );
 
     if (pCruiseOptions.tsPreCompilationDeps === "specify") {
+      const extractObject = extractFromJavaScriptAST(
+        pCruiseOptions,
+        pFileName,
+        pTranspileOptions
+      );
       lDependencies = detectPreCompilationNess(
         lDependencies,
-        extractFromJavaScriptAST(pCruiseOptions, pFileName, pTranspileOptions)
+        extractObject.lDependencies
       );
+      lFunctionDeclarations = extractObject.lFunctionDeclarations;
+      lCallExpressions = extractObject.lCallExpressions;
     }
   } else {
-    lDependencies = extractFromJavaScriptAST(
+    const extractObject = extractFromJavaScriptAST(
       pCruiseOptions,
       pFileName,
       pTranspileOptions
     );
+
+    lDependencies = extractObject.lDependencies;
+    lFunctionDeclarations = extractObject.lFunctionDeclarations;
+    lCallExpressions = extractObject.lCallExpressions;
   }
 
-  return lDependencies;
+  return {
+    lDependencies,
+    lFunctionDeclarations,
+    lCallExpressions,
+  };
 }
 
 function matchesDoNotFollow(pResolved, pDoNotFollow) {
@@ -162,8 +194,13 @@ module.exports = (
   pTranspileOptions
 ) => {
   try {
-    return _uniqBy(
-      extractDependencies(pCruiseOptions, pFileName, pTranspileOptions),
+    const extractObject = extractDependencies(
+      pCruiseOptions,
+      pFileName,
+      pTranspileOptions
+    );
+    const dependencies = _uniqBy(
+      extractObject.lDependencies,
       getDependencyUniqueKey
     )
       .sort(compareDeps)
@@ -175,6 +212,11 @@ module.exports = (
           (!_get(pCruiseOptions, "includeOnly.path") ||
             matchesPattern(pDep.resolved, pCruiseOptions.includeOnly.path))
       );
+    return {
+      dependencies,
+      functionDeclarations: extractObject.lFunctionDeclarations,
+      callExpressions: extractObject.lCallExpressions,
+    };
   } catch (pError) {
     throw new Error(
       `Extracting dependencies ran afoul of...\n\n  ${pError.message}\n... in ${pFileName}\n\n`

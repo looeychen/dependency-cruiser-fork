@@ -14,6 +14,7 @@ function getASTFromSource(pSource, pExtension, pTranspileOptions) {
     return acorn.parse(lJavaScriptSource, {
       sourceType: "module",
       ecmaVersion: 11,
+      locations: true,
     });
   } catch (pError) {
     return acornLoose.parse(lJavaScriptSource, { sourceType: "module" });
