@@ -10,12 +10,14 @@ function parseCallExpression(pLCallExpressions, pLDependencies) {
 
     let importFuncs = [];
     pLDependencies.forEach((_dep) => {
-      const _funcs = _dep.importedFuncs.map((_func) => {
-        return {
-          ..._func,
-          depSource: _dep.module,
-        };
-      });
+      const _funcs =
+        _dep.importedFuncs &&
+        _dep.importedFuncs.map((_func) => {
+          return {
+            ..._func,
+            depSource: _dep.module,
+          };
+        });
       importFuncs = importFuncs.concat(_funcs);
     });
 
@@ -37,7 +39,7 @@ function parseCallExpression(pLCallExpressions, pLDependencies) {
       }
 
       const calledImportFunc = importFuncs.find(
-        (_func) => _func.local === callMainName
+        (_func) => _func && _func.local === callMainName
       );
       if (calledImportFunc) {
         pLCallExpressions.push({

@@ -1,6 +1,6 @@
 {
   "name": "dependency-cruiser-fork",
-  "version": "9.11.0-beta1",
+  "version": "9.11.0-beta2",
   "description": "Validate and visualize dependencies. With your rules. JavaScript, TypeScript, CoffeeScript. ES6, CommonJS, AMD.",
   "keywords": [
     "static analysis",

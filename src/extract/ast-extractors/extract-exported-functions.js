@@ -42,8 +42,10 @@ function parseFunctionName(pLFunctionDeclarations) {
     ) {
       const { left, right } = pNode;
       if (
+        right &&
         (right.type === "ArrowFunctionExpression" ||
           right.type === "FunctionExpression") &&
+        left &&
         left.type === "Identifier"
       ) {
         functionName = left.name;
@@ -57,8 +59,10 @@ function parseFunctionName(pLFunctionDeclarations) {
     ) {
       const { id, init } = pNode;
       if (
+        init &&
         (init.type === "ArrowFunctionExpression" ||
           init.type === "FunctionExpression") &&
+        id &&
         id.type === "Identifier"
       ) {
         functionName = id.name;
@@ -71,7 +75,7 @@ function parseFunctionName(pLFunctionDeclarations) {
       isInGlobalScope(pNode, pVisitors)
     ) {
       const { id } = pNode;
-      if (id.type === "Identifier") {
+      if (id && id.type === "Identifier") {
         functionName = id.name;
       }
     }
@@ -83,15 +87,16 @@ function parseFunctionName(pLFunctionDeclarations) {
     ) {
       const { declaration } = pNode;
       if (
-        declaration.type === "FunctionDeclaration" ||
-        declaration.type === "ArrowFunctionExpression"
+        declaration &&
+        (declaration.type === "FunctionDeclaration" ||
+          declaration.type === "ArrowFunctionExpression")
       ) {
         if (declaration.id && declaration.id.type === "Identifier") {
           functionName = declaration.id.name;
         } else {
           functionName = "default";
         }
-      } else if (declaration.type === "Identifier") {
+      } else if (declaration && declaration.type === "Identifier") {
         functionName = declaration.name;
         nonFunction = true;
       }
